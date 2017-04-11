@@ -1,3 +1,6 @@
+var myHeading = document.querySelector('h1');
+myHeading.textContent = 'wangrl';
+
 
 var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
