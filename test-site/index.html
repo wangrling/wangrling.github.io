@@ -1,27 +1,202 @@
-<!DOCTYPE html>  
-<html>  
-  <head>  
-    <meta charset="utf-8">  
-    <title>My test page</title>  
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>  
-      <link href="styles/styles.css" rel="stylesheet" type="text/css">
-  </head>  
-  <body>  
-    <h1>Mozilla is Cool!</h1>
-    <img src="images/firefox-icon.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">  
-  
-    <p>At Mozilla, we’re a global community of</p>
-      
-    <ul> <!-- changed to list in the tutorial -->  
-      <li>technologists</li>  
-      <li>thinkers</li>  
-      <li>builders</li>  
-    </ul>  
-  
-    <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>  
-  
-    <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to learn even more about the values and principles that guide the pursuit of our mission.</p>
-      <button>Change user</button>
-      <script src="scripts/main.js"></script>
-  </body>  
-</html> 
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        font-family: 'Comfortaa', cursive;
+    }
+
+    .con {
+        max-width: 650px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    h1 {
+        top: 30px;
+        position: relative;
+        text-align: center;
+        color: #fff;
+    }
+
+    .box-hover:hover {
+        font-family: 'Cinzel Decorative', cursive;
+    }
+
+    .zayn-box-1 {
+        z-index: 100;
+        position: relative;
+        background-image: url("https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAfUAAAAJGI4Mjg4ZDcwLWE1MDUtNDU2My04ODI5LTIzYTM1NzUxZDM5Yg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 3px;
+        border-bottom: 4px solid rgba(255, 162, 52, 0.8);
+        border-left: 4px solid deepskyblue;
+        border-right: 4px solid #fa3380;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        width: 84%;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    .zayn-box-2 {
+        z-index: 99;
+        position: relative;
+        background-image: url("https://s-media-cache-ak0.pinimg.com/originals/99/91/eb/9991ebe57eb7bc172143765e28a55b5d.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 3px;
+        border-bottom: 4px solid rgba(2, 204, 186, 0.8);
+        border-left: 4px solid deepskyblue;
+        border-right: 4px solid #fa3380;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        width: 84%;
+        height: 100px;
+        margin: 0 auto;
+        top: -22px;
+    }
+
+
+    .zayn-box-3 {
+        z-index: 98;
+        position: relative;
+        background-image: url("http://www.amaraholisticwellbeing.com/wp-content/uploads/2015/01/Fall-beautiful-nature-22666764-900-562.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 3px;
+        border-bottom: 4px solid rgba(169, 81, 237, 0.8);
+        border-left: 4px solid deepskyblue;
+        border-right: 4px solid #fa3380;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        width: 84%;
+        height: 100px;
+        margin: 0 auto;
+        top: -43px;
+    }
+
+    .zayn-box-4 {
+        z-index: 97;
+        position: relative;
+        background-image: url("http://imgcluster.com/wp-content/uploads/2017/05/Nature-Beauty-Nice-Wallpaper.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 3px;
+        border-bottom: 4px solid rgba(255, 84, 131, 0.8);
+        border-left: 4px solid deepskyblue;
+        border-right: 4px solid #fa3380;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        width: 84%;
+        height: 100px;
+        margin: 0 auto;
+        top: -65px;
+    }
+
+
+    .zayn-box-5 {
+        z-index: 96;
+        position: relative;
+        background-image: url("http://goldwallpapers.com/uploads/posts/winter-nature-wallpapers/winter_nature_wallpapers_010.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 3px;
+        border-bottom: 4px solid deepskyblue;
+        border-left: 4px solid deepskyblue;
+        border-right: 4px solid #fa3380;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        width: 84%;
+        height: 100px;
+        margin: 0 auto;
+        top: -86px;
+    }
+
+
+
+    .overlay {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(000, 000, 000, 0.6);
+    }
+
+    .shadow::after {
+        content: "";
+        border-radius: 5px;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .shadow:hover {
+        -webkit-transform: scale(1.25, 1.25);
+        transform: scale(1.1, 1.1);
+    }
+
+    .box:hover::after {
+        opacity: 1;
+    }
+
+</style>
+
+
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animated Gallery</title>
+</head>
+
+<body>
+    <div class="con">
+        <div class="zayn-box-1 shadow box-hover">
+            <div class="overlay"></div>
+            <h1>Hover Over</h1>
+        </div>
+        <div class="zayn-box-2 shadow box-hover">
+            <div class="overlay"></div>
+            <h1 class="z-b-1">Comedy Movies</h1>
+        </div>
+        <div class="zayn-box-3 shadow box-hover">
+            <div class="overlay"></div>
+            <h1 class="z-b-2">Romance Movies</h1>
+        </div>
+        <div class="zayn-box-4 shadow box-hover">
+            <div class="overlay"></div>
+            <h1 class="z-b-3">Action Movies</h1>
+        </div>
+        <div class="zayn-box-5 shadow box-hover">
+            <div class="overlay"></div>
+            <h1 class="z-b-4">Horror Movies</h1>
+        </div>
+    </div>
+</body>
+
+</html>
